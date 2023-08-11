@@ -33,5 +33,9 @@
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }

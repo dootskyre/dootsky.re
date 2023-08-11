@@ -10302,3 +10302,37 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: hsl(0, 0%, 98%);
   padding: 3rem 1.5rem 6rem;
 }
+
+.has-text-dark-purple {
+  color: #0c0542;
+}
+
+.has-text-light-pink {
+  color: #f468c7;
+}
+
+.has-background-dark-purple {
+  background-color: #0c0542;
+}
+
+.has-background-light-pink {
+  background-color: #f468c7;
+}
+
+.slick-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  max-width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

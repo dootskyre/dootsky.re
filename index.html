@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Sky's portfolio!</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+    <!-- Include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- Include Slick carousel library -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/lib/main.js"></script>
 
-    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
 
     <!-- SEO - Change accordingly when done/have your own domain -->
-    <meta name="description" content="Sky's portfolio!">
-    <meta name="keywords" content="dootskyre, sky, art, pixel art, portfolio, commissions">
-    <meta name="author" content="dootskyre">
+    <meta name="description" content="Sky's portfolio!" />
+    <meta name="keywords" content="dootskyre, sky, art, pixel art, portfolio, commissions" />
+    <meta name="author" content="dootskyre" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Open Graph Tags - Change accordingly when done/have your own domain -->
     <meta content="Sky's portfolio" property="og:title" />
     <meta content="Lorem ipsum dolor sit amet" property="og:description" />
@@ -25,9 +31,46 @@
     <meta content="https://dootskyre.femboyfurry.net/images/picture.png" property="og:image" />
     <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
 </head>
+<body bgcolor="#0c0542">
+    <section class="section">
+        <h1 class="title is-1 has-text-light-pink has-text-centered">
+            <b>Sky's portfolio</b>
+        </h1>
+    </section>
 
-<body>
-  
+    <section class="section is-medium">
+        <p class="subtitle is-4 has-text-light-pink has-text-centered">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </section>
+
+    <section class="section is-medium has-background-grey">
+      <div class="container-fluid">
+          <div class="slider">
+              <div class="slide">
+                  <img src="/images/1.jfif" alt="Image 1" />
+              </div>
+              <div class="slide">
+                  <img src="/images/2.png" alt="Image 2" />
+              </div>
+              <div class="slide">
+                  <img src="/images/3.png" alt="Image 3" />
+              </div>
+              <div class="slide">
+                  <img src="/images/4.png" alt="Image 4" />
+              </div>
+              <div class="slide">
+                  <img src="/images/5.png" alt="Image 5" />
+              </div>
+              <div class="slide">
+                  <img src="/images/6.jfif" alt="Image 6" />
+              </div>
+              <div class="slide">
+                  <img src="/images/7.png" alt="Image 7" />
+              </div>
+          </div>
+      </div>
+  </section>
+
 </body>
-
 </html>

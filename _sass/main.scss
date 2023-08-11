@@ -31,3 +31,37 @@ $primary-invert: $pink-invert;
 
 $dark-purple: #0c0542;
 $light-pink: #f468c7;
+
+.has-text-dark-purple {
+  color: $dark-purple;
+}
+
+.has-text-light-pink {
+  color: $light-pink;
+}
+
+.has-background-dark-purple {
+  background-color: $dark-purple;
+}
+
+.has-background-light-pink {
+  background-color: $light-pink;
+}
+
+.slick-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    max-width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
