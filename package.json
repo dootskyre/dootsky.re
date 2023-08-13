@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
+    "lightbox2": "^2.11.4",
     "slick-carousel": "^1.8.1"
   }
 }

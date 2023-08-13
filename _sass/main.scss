@@ -32,6 +32,12 @@ $primary-invert: $pink-invert;
 $dark-purple: #0c0542;
 $light-pink: #f468c7;
 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #0c0542;
+    height: 100vh;
+}
+
 .has-text-dark-purple {
   color: $dark-purple;
 }
@@ -64,4 +70,11 @@ $light-pink: #f468c7;
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.slide-text {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
 }

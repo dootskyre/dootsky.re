@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css">
 
-    <!-- Include jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <!-- Include Slick carousel library -->
+    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/lib/main.js"></script>
 
@@ -31,14 +31,14 @@
     <meta content="https://dootskyre.femboyfurry.net/images/picture.png" property="og:image" />
     <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
 </head>
-<body bgcolor="#0c0542">
+<body>
     <section class="section">
         <h1 class="title is-1 has-text-light-pink has-text-centered">
             <b>Sky's portfolio</b>
         </h1>
     </section>
 
-    <section class="section is-medium">
+    <section class="section">
         <p class="subtitle is-4 has-text-light-pink has-text-centered">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
@@ -48,29 +48,51 @@
       <div class="container-fluid">
           <div class="slider">
               <div class="slide">
-                  <img src="/images/1.jfif" alt="Image 1" />
+                  <a href="/images/1.jfif" data-lightbox="art" data-title="Caption 1">
+                      <img src="/images/1.jfif" alt="Image 1" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/2.png" alt="Image 2" />
+                  <a href="/images/2.png" data-lightbox="art" data-title="Caption 2">
+                      <img src="/images/2.png" alt="Image 2" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/3.png" alt="Image 3" />
+                  <a href="/images/3.png" data-lightbox="art" data-title="Caption 3">
+                      <img src="/images/3.png" alt="Image 3" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/4.png" alt="Image 4" />
+                  <a href="/images/4.png" data-lightbox="art" data-title="Caption 4">
+                      <img src="/images/4.png" alt="Image 4" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/5.png" alt="Image 5" />
+                  <a href="/images/5.png" data-lightbox="art" data-title="Caption 5">
+                      <img src="/images/5.png" alt="Image 5" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/6.jfif" alt="Image 6" />
+                  <a href="/images/6.jfif" data-lightbox="art" data-title="Caption 6">
+                      <img src="/images/6.jfif" alt="Image 6" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
               <div class="slide">
-                  <img src="/images/7.png" alt="Image 7" />
+                  <a href="/images/7.png" data-lightbox="art" data-title="Caption 7">
+                      <img src="/images/7.png" alt="Image 7" />
+                  </a>
+                  <p class="slide-text">Lorem ipsum dolor sit amet, consectetur</p>
               </div>
           </div>
       </div>
   </section>
+  
 
 </body>
 </html>
