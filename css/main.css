@@ -13,6 +13,7 @@ body {
   border-bottom: #071059 solid 4px;
   z-index: 2;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 .navbar a {
