@@ -32,19 +32,41 @@
     <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
 </head>
 <body>
-    <section class="section">
-        <h1 class="title is-1 has-text-light-pink has-text-centered">
-            <b>Sky's portfolio</b>
-        </h1>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-brand">
+            <div class="navbar-burger" data-target="navbarLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a class="navbar-logo" href="/">
+                <img src="/images/pfp.png" style="border-radius: 50%;">
+            </a>
+        </div>
+        <div id="navbarLinks" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="/">
+                    Gallery
+                </a>
+                <a class="navbar-item" href="/contact.html">
+                    Contact
+                </a>
+                <a class="navbar-item" href="/tos.html">
+                    ToS
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section" id="title">
+        <div class="container">
+            <p class="subtitle is-1 has-text-pink has-text-centered">
+                <b>Sky's portfolio</b>
+            </p>
+        </div>
     </section>
 
-    <section class="section">
-        <p class="subtitle is-4 has-text-light-pink has-text-centered">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    </section>
-
-    <section class="section is-medium has-background-grey">
+    <section class="section" id="carousel">
       <div class="container-fluid">
           <div class="slider">
               <div class="slide">
@@ -91,7 +113,24 @@
               </div>
           </div>
       </div>
-  </section>
+    </section>
+
+    <section class="section" id="description">
+        <div class="container">
+            <p class="subtitle is-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="commission">
+        <p class="subtitle is-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p> 
+        <button class="button">
+            <a href="/contact.html">Commission</a>
+        </button>
+    </section>
   
 
 </body>

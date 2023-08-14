@@ -19,8 +19,8 @@ $(document).ready(function() {
   $(".slider").slick({
       centerMode: true,
       centerPadding: "60px",
-      slidesToShow: 3, // Show only 3 slides at a time
-      slidesToScroll: 1, // Scroll one slide at a time
+      slidesToShow: 3,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
       infinite: true,

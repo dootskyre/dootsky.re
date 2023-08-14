@@ -1,80 +1,174 @@
 @charset "utf-8";
 
-// Customization
-
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-
-/*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
-
-@import "../node_modules/bulma/bulma";
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-$dark-purple: #0c0542;
-$light-pink: #f468c7;
+$darkest-purple: #071059;
+$dark-purple: #2f1a91;
+$purple: #9141cf;
+$pink: #f567ff;
+$light-pink: #fcb7fe;
+
+$title-color: $pink;
+$title-family: 'Nunito', sans-serif;
+$subtitle-color: $pink;
+$subtitle-family: 'Nunito', sans-serif;
+
+$navbar-background-color: $dark-purple;
+$navbar-item-color: $pink;
+$navbar-item-hover-color: $pink;
+$navbar-item-hover-background-color: $dark-purple;
+$navbar-dropdown-background-color: $light-pink;
+$navbar-dropdown-item-hover-color: $light-pink;
+$navbar-dropdown-item-hover-background-color: $dark-purple;
+$navbar-dropdown-arrow: $pink;
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: #0c0542;
+    background-color: $dark-purple;
     height: 100vh;
 }
 
-.has-text-dark-purple {
-  color: $dark-purple;
+/* 
+    Navbar
+*/
+
+.navbar {
+	width: 100%;
+  border-bottom: $darkest-purple solid 4px;
+	z-index: 2;
+	box-sizing: border-box;
 }
 
-.has-text-light-pink {
-  color: $light-pink;
+.navbar a {
+	font-size: 1.5rem;
 }
 
-.has-background-dark-purple {
-  background-color: $dark-purple;
+.navbar-logo {
+	translate: 0.8rem 0.25rem;
+	width: 2.75rem;
+	height: 2.75rem;
 }
 
-.has-background-light-pink {
-  background-color: $light-pink;
+
+#title {
+  padding: 20px;
+}
+
+/*
+    Carousel
+*/
+
+#carousel {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: $darkest-purple;
 }
 
 .slick-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide {
-    max-width: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
+  max-width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .slide-text {
-    text-align: center;
-    color: black;
-    font-size: 16px;
-    margin-top: 10px;
+  text-align: center;
+  color: $pink;
+  font-size: 16px;
+  margin-top: 10px;
 }
+
+#description {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $dark-purple;
+}
+
+#commission {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $dark-purple;
+}
+
+#commission p {
+  color: $pink;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+#commission .button {
+  padding: 25px 15px 25px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background-color: $pink;
+}
+
+#commission .button a {
+  font-size: 24px;
+  font-weight: 500;
+  color: $dark-purple;
+}
+
+/*
+    Bulma stuff
+*/
+
+#darkest-purple {
+  color: $darkest-purple;
+  background-color: $darkest-purple;
+}
+
+#dark-purple {
+  color: $dark-purple;
+  background-color: $dark-purple;
+}
+
+#purple {
+  color: $purple;
+  background-color: $purple;
+}
+
+#pink {
+  color: $pink;
+  background-color: $pink;
+}
+
+#light-pink {
+  color: $light-pink;
+  background-color: $light-pink;
+}
+
+#gray {
+  color: gray;
+  background-color: gray;
+}
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/helpers/typography.sass";
+@import "../node_modules/bulma/sass/helpers/visibility.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
