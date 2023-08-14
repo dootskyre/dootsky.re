@@ -8,25 +8,34 @@ $purple: #9141cf;
 $pink: #f567ff;
 $light-pink: #fcb7fe;
 
-$title-color: $pink;
+$title-color: $light-pink;
 $title-family: 'Nunito', sans-serif;
-$subtitle-color: $pink;
+$subtitle-color: $light-pink;
 $subtitle-family: 'Nunito', sans-serif;
 
 $navbar-background-color: $dark-purple;
-$navbar-item-color: $pink;
-$navbar-item-hover-color: $pink;
+$navbar-burger-color: $light-pink;
+$navbar-item-color: $light-pink;
+$navbar-item-hover-color: $light-pink;
 $navbar-item-hover-background-color: $purple;
-$navbar-dropdown-background-color: $purple;
-$navbar-dropdown-item-hover-color: $light-pink;
-$navbar-dropdown-item-hover-background-color: $pink;
-$navbar-dropdown-arrow: $pink;
+
+/*
+
+    Global
+
+*/
 
 body {
     font-family: 'Nunito', sans-serif;
     background-color: $dark-purple;
     height: 100vh;
 }
+
+/*
+
+    index.html
+
+*/
 
 /* 
     Navbar
@@ -80,7 +89,8 @@ body {
 .slide img {
   width: auto;
   height: 100%;
-  object-fit: contain;
+  max-height: 368px;
+  object-fit: cover;
   border: 4px solid $light-pink;
 }
 
@@ -178,10 +188,7 @@ body {
         padding-right: 35px;
       }
   }
-
-  
 }
-
 
 #description {
   text-align: center;
@@ -203,7 +210,6 @@ body {
 }
 
 #commission p {
-  color: $pink;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -215,7 +221,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 25px;
-  background-color: $pink;
+  background-color: $light-pink;
 }
 
 #commission .button a {
@@ -225,38 +231,22 @@ body {
 }
 
 /*
-    Bulma stuff
+
+    gallery.html
+
 */
 
-#darkest-purple {
-  color: $darkest-purple;
-  background-color: $darkest-purple;
-}
+/*
 
-#dark-purple {
-  color: $dark-purple;
-  background-color: $dark-purple;
-}
+    contact.html
 
-#purple {
-  color: $purple;
-  background-color: $purple;
-}
+*/
 
-#pink {
-  color: $pink;
-  background-color: $pink;
-}
+/*
 
-#light-pink {
-  color: $light-pink;
-  background-color: $light-pink;
-}
+    tos.html
 
-#gray {
-  color: gray;
-  background-color: gray;
-}
+*/
 
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";

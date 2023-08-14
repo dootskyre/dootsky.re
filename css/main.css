@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*
+
+    Global
+
+*/
 body {
   font-family: "Nunito", sans-serif;
   background-color: #2f1a91;
   height: 100vh;
 }
 
+/*
+
+    index.html
+
+*/
 /* 
     Navbar
 */
@@ -54,7 +64,8 @@ body {
 .slide img {
   width: auto;
   height: 100%;
-  object-fit: contain;
+  max-height: 368px;
+  object-fit: cover;
   border: 4px solid #fcb7fe;
 }
 
@@ -170,7 +181,6 @@ body {
 }
 
 #commission p {
-  color: #f567ff;
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -182,7 +192,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 25px;
-  background-color: #f567ff;
+  background-color: #fcb7fe;
 }
 
 #commission .button a {
@@ -192,38 +202,20 @@ body {
 }
 
 /*
-    Bulma stuff
+
+    gallery.html
+
 */
-#darkest-purple {
-  color: #071059;
-  background-color: #071059;
-}
+/*
 
-#dark-purple {
-  color: #2f1a91;
-  background-color: #2f1a91;
-}
+    contact.html
 
-#purple {
-  color: #9141cf;
-  background-color: #9141cf;
-}
+*/
+/*
 
-#pink {
-  color: #f567ff;
-  background-color: #f567ff;
-}
+    tos.html
 
-#light-pink {
-  color: #fcb7fe;
-  background-color: #fcb7fe;
-}
-
-#gray {
-  color: gray;
-  background-color: gray;
-}
-
+*/
 /* Bulma Base */
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
@@ -1064,7 +1056,7 @@ body.has-navbar-fixed-bottom {
 }
 
 .navbar-burger {
-  color: #f567ff;
+  color: #fcb7fe;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -1117,7 +1109,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #f567ff;
+  color: #fcb7fe;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -1139,7 +1131,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: #9141cf;
-  color: #f567ff;
+  color: #fcb7fe;
 }
 
 .navbar-item {
@@ -1183,7 +1175,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   padding-right: 2.5em;
 }
 .navbar-link:not(.is-arrowless)::after {
-  border-color: #f567ff;
+  border-color: hsl(229, 53%, 53%);
   margin-top: -0.375em;
   right: 1.125em;
 }
@@ -1287,8 +1279,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     background-color: transparent !important;
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-    background-color: #f567ff;
-    color: #fcb7fe;
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 4%);
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: hsl(0, 0%, 96%);
@@ -1337,7 +1329,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     margin-left: auto;
   }
   .navbar-dropdown {
-    background-color: #9141cf;
+    background-color: hsl(0, 0%, 100%);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-top: 2px solid hsl(0, 0%, 86%);
@@ -1358,8 +1350,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     padding-right: 3rem;
   }
   .navbar-dropdown a.navbar-item:focus, .navbar-dropdown a.navbar-item:hover {
-    background-color: #f567ff;
-    color: #fcb7fe;
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(0, 0%, 4%);
   }
   .navbar-dropdown a.navbar-item.is-active {
     background-color: hsl(0, 0%, 96%);
@@ -2618,7 +2610,7 @@ a.box:active {
 }
 
 .title {
-  color: #f567ff;
+  color: #fcb7fe;
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: 600;
@@ -2654,7 +2646,7 @@ a.box:active {
 }
 
 .subtitle {
-  color: #f567ff;
+  color: #fcb7fe;
   font-family: "Nunito", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
