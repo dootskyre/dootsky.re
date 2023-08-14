@@ -63,6 +63,7 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
   background-color: $darkest-purple;
+  border: 4px solid $light-pink
 }
 
 .slick-list {
@@ -81,39 +82,68 @@ body {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border: 4px solid $light-pink;
 }
 
 .slide-text {
   text-align: center;
-  color: $pink;
+  color: $light-pink;
   font-size: 16px;
   margin-top: 10px;
 }
 
 .slick-dots li button:before {
-  color: $pink !important;
+  color: $light-pink !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: $pink !important;
+  color: $light-pink !important;
 }
 
-.slick-prev,
-.slick-next {
-    font-size: 100px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+.container {
+  position: relative;
+  overflow: hidden;
+
+  .carousel-previous,
+  .carousel-next {
     z-index: 999;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 15%; /* Adjust width as needed */
+    color: $dark-purple;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &.carousel-previous {
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    &.carousel-next {
+      right: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    }
+
+    &:hover {
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    }
+
+    img {
+      display: block;
+      width: 40px;
+      height: auto;
+    }
+  }
 }
 
-.slick-prev {
-    left: -200px;
-}
-
-.slick-next {
-    right: -200px;
-}
 
 
 #description {

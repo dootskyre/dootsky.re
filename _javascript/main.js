@@ -16,18 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 $(document).ready(function() {
-  $(".custom-slider").slick({
-      centerPadding: "60px",
+  $(".slider").slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
       variableWidth: true,
-      infinite: false,
+      infinite: true,
       draggable: true,
       dots: true,
-      prevArrow: $(".slick-prev"),
-      nextArrow: $(".slick-next"),
+      centerMode: true,
+      prevArrow: $(".carousel-previous"),
+      nextArrow: $(".carousel-next"),
       responsive: [
           {
               breakpoint: 1024,
