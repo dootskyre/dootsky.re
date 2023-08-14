@@ -28,7 +28,6 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: $dark-purple;
     height: 100vh;
-    overflow: hidden;
 }
 
 /*
@@ -115,7 +114,7 @@ body {
 }
 
 
-.section {
+#carousel  {
   position: relative;
   overflow: hidden;
 
@@ -239,6 +238,60 @@ body {
     gallery.html
 
 */
+
+body.lb-disable-scrolling {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery {
+  background-color: $darkest-purple;
+  padding: 50px 0;
+}
+
+#gallery .columns .column.is-4 {
+  flex: 0 0 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+}
+
+#gallery .columns a {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid $light-pink;
+  transition: transform 0.2s ease-in-out;
+}
+
+#gallery .columns a img {
+  width: auto;
+  height: 100%;
+  max-height: 360px;
+  vertical-align: top;
+}
+
+#gallery .columns a:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .columns.is-multiline {
+    flex-wrap: nowrap;
+  }
+
+  .columns.is-4 {
+    flex: none;
+  }
+}
+
+#gallery .columns.is-multiline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
 /*
 

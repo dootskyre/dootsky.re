@@ -8,7 +8,6 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: #2f1a91;
   height: 100vh;
-  overflow: hidden;
 }
 
 /*
@@ -90,12 +89,12 @@ body {
   color: #fcb7fe !important;
 }
 
-.section {
+#carousel {
   position: relative;
   overflow: hidden;
 }
-.section .carousel-previous,
-.section .carousel-next {
+#carousel .carousel-previous,
+#carousel .carousel-next {
   z-index: 999;
   background: none;
   border: none;
@@ -109,59 +108,59 @@ body {
   font-weight: bold;
   text-transform: uppercase;
 }
-.section .carousel-previous.carousel-previous,
-.section .carousel-next.carousel-previous {
+#carousel .carousel-previous.carousel-previous,
+#carousel .carousel-next.carousel-previous {
   left: 0;
   background: linear-gradient(to left, rgba(47, 26, 145, 0), rgb(47, 26, 145));
   padding-right: 20px;
 }
-.section .carousel-previous.carousel-next,
-.section .carousel-next.carousel-next {
+#carousel .carousel-previous.carousel-next,
+#carousel .carousel-next.carousel-next {
   right: 0;
   background: linear-gradient(to right, rgba(47, 26, 145, 0), rgb(47, 26, 145));
   padding-left: 25px;
 }
-.section .carousel-previous.carousel-previous:hover,
-.section .carousel-next.carousel-previous:hover {
+#carousel .carousel-previous.carousel-previous:hover,
+#carousel .carousel-next.carousel-previous:hover {
   background: linear-gradient(to left, rgba(47, 26, 145, 0.5), rgb(47, 26, 145));
 }
-.section .carousel-previous.carousel-next:hover,
-.section .carousel-next.carousel-next:hover {
+#carousel .carousel-previous.carousel-next:hover,
+#carousel .carousel-next.carousel-next:hover {
   background: linear-gradient(to right, rgba(47, 26, 145, 0.5), rgb(47, 26, 145));
 }
-.section .carousel-previous.carousel-previous:active,
-.section .carousel-next.carousel-previous:active {
+#carousel .carousel-previous.carousel-previous:active,
+#carousel .carousel-next.carousel-previous:active {
   background: linear-gradient(to left, rgba(47, 26, 145, 0.8), rgb(47, 26, 145));
 }
-.section .carousel-previous.carousel-next:active,
-.section .carousel-next.carousel-next:active {
+#carousel .carousel-previous.carousel-next:active,
+#carousel .carousel-next.carousel-next:active {
   background: linear-gradient(to right, rgba(47, 26, 145, 0.8), rgb(47, 26, 145));
 }
-.section .carousel-previous button,
-.section .carousel-next button {
+#carousel .carousel-previous button,
+#carousel .carousel-next button {
   width: 100%;
   height: 100%;
 }
-.section .carousel-previous img,
-.section .carousel-next img {
+#carousel .carousel-previous img,
+#carousel .carousel-next img {
   width: 50px;
   height: auto;
 }
 @media (max-width: 768px) {
-  .section .carousel-previous,
-  .section .carousel-next {
+  #carousel .carousel-previous,
+  #carousel .carousel-next {
     width: 60px;
   }
-  .section .carousel-previous img,
-  .section .carousel-next img {
+  #carousel .carousel-previous img,
+  #carousel .carousel-next img {
     max-width: 20px;
     width: 20px;
     padding: 0;
   }
-  .section .carousel-previous {
+  #carousel .carousel-previous {
     padding-left: 15px;
   }
-  .section .carousel-next {
+  #carousel .carousel-next {
     padding-right: 35px;
   }
 }
@@ -211,6 +210,58 @@ body {
     gallery.html
 
 */
+body.lb-disable-scrolling {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery {
+  background-color: #071059;
+  padding: 50px 0;
+}
+
+#gallery .columns .column.is-4 {
+  flex: 0 0 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+}
+
+#gallery .columns a {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #fcb7fe;
+  transition: transform 0.2s ease-in-out;
+}
+
+#gallery .columns a img {
+  width: auto;
+  height: 100%;
+  max-height: 360px;
+  vertical-align: top;
+}
+
+#gallery .columns a:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .columns.is-multiline {
+    flex-wrap: nowrap;
+  }
+  .columns.is-4 {
+    flex: none;
+  }
+}
+#gallery .columns.is-multiline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 /*
 
     contact.html
