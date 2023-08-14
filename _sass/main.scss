@@ -14,7 +14,6 @@ $subtitle-color: $light-pink;
 $subtitle-family: 'Nunito', sans-serif;
 
 $navbar-background-color: $dark-purple;
-$navbar-burger-color: $light-pink;
 $navbar-item-color: $light-pink;
 $navbar-item-hover-color: $light-pink;
 $navbar-item-hover-background-color: $purple;
@@ -47,6 +46,10 @@ body {
 	z-index: 2;
 	box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+}
+
+.navbar-burger span {
+  color: $light-pink;
 }
 
 .navbar a {
