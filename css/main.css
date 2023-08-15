@@ -222,6 +222,17 @@ body.lb-disable-scrolling {
   padding: 50px 0;
 }
 
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gallery .columns {
+  width: 90vw;
+}
+
 #gallery .columns .column.is-4 {
   flex: 0 0 calc(20% - 20px);
   max-width: calc(20% - 20px);
