@@ -10,6 +10,36 @@ body {
   height: 100vh;
 }
 
+.button {
+  padding: 25px 15px 25px 15px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-radius: 25px !important;
+  background-color: #fcb7fe !important;
+}
+
+.button a {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  color: #2f1a91 !important;
+}
+
+.button:hover {
+  transition: background-color 0.3s ease;
+  background-color: #9141cf !important;
+}
+.button:hover a {
+  transition: color 0.3s ease;
+  color: #fcb7fe !important;
+}
+
+.button:active {
+  background-color: #f567ff !important;
+}
+.button:active a {
+  color: #2f1a91 !important;
+}
+
 /*
 
     index.html
@@ -47,6 +77,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.navbar-item:active {
+  background-color: #f567ff !important;
+}
+
 .navbar-item.current {
   color: #fcb7fe;
   background-color: #9141cf;
@@ -73,7 +107,7 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.navbar-burger:hover .navbar-pfp {
+.navbar-burger:active .navbar-pfp {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -242,20 +276,6 @@ body {
   font-weight: 500;
   text-align: center;
   margin: 0;
-}
-
-#commission .button {
-  padding: 25px 15px 25px 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  background-color: #fcb7fe;
-}
-
-#commission .button a {
-  font-size: 24px;
-  font-weight: 500;
-  color: #2f1a91;
 }
 
 /*

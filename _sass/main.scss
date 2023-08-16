@@ -31,6 +31,38 @@ body {
     height: 100vh;
 }
 
+.button {
+  padding: 25px 15px 25px 15px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-radius: 25px !important;
+  background-color: $light-pink !important;
+}
+
+.button a {
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  color: $dark-purple !important;
+}
+
+.button:hover {
+  transition: background-color 0.3s ease;
+  background-color: $purple !important;
+
+  a {
+    transition: color 0.3s ease;
+    color: $light-pink !important;
+  }
+}
+
+.button:active {
+  background-color: $pink !important;
+
+  a {
+    color: $dark-purple !important;
+  }
+}
+
 /*
 
     index.html
@@ -70,6 +102,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.navbar-item:active {
+  background-color: $pink !important;
+}
+
 .navbar-item.current {
   color: $light-pink;
   background-color: $purple;
@@ -97,7 +133,7 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.navbar-burger:hover .navbar-pfp {
+.navbar-burger:active .navbar-pfp {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -276,20 +312,6 @@ body {
   font-weight: 500;
   text-align: center;
   margin: 0;
-}
-
-#commission .button {
-  padding: 25px 15px 25px 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 25px;
-  background-color: $light-pink;
-}
-
-#commission .button a {
-  font-size: 24px;
-  font-weight: 500;
-  color: $dark-purple;
 }
 
 /*
