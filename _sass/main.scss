@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 $darkest-purple: #071059;
 $dark-purple: #2f1a91;
@@ -9,9 +9,9 @@ $pink: #f567ff;
 $light-pink: #fcb7fe;
 
 $title-color: $light-pink;
-$title-family: 'Nunito', sans-serif;
+$title-family: 'DM Sans', sans-serif;
 $subtitle-color: $light-pink;
-$subtitle-family: 'Nunito', sans-serif;
+$subtitle-family: 'DM Sans', sans-serif;
 
 $navbar-background-color: $dark-purple;
 $navbar-item-color: $light-pink;
@@ -25,7 +25,7 @@ $navbar-item-hover-background-color: $purple;
 */
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: $dark-purple;
     height: 100vh;
 }
@@ -107,10 +107,12 @@ body {
 
 .slick-dots li button:before {
   color: $light-pink !important;
+  font-size: 24px !important;
 }
 
 .slick-dots li.slick-active button:before {
   color: $light-pink !important;
+  font-size: 24px !important;
 }
 
 

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 /*
 
     Global
 
 */
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: #2f1a91;
   height: 100vh;
 }
@@ -83,10 +83,12 @@ body {
 
 .slick-dots li button:before {
   color: #fcb7fe !important;
+  font-size: 24px !important;
 }
 
 .slick-dots li.slick-active button:before {
   color: #fcb7fe !important;
+  font-size: 24px !important;
 }
 
 #carousel {
@@ -2678,7 +2680,7 @@ a.box:active {
 
 .title {
   color: #fcb7fe;
-  font-family: "Nunito", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
@@ -2714,7 +2716,7 @@ a.box:active {
 
 .subtitle {
   color: #fcb7fe;
-  font-family: "Nunito", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25;
