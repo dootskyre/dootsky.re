@@ -75,6 +75,27 @@ body {
   background-color: $purple;
 }
 
+.navbar-logo {
+	translate: 0.8rem 0.45rem;
+	width: 3.75rem;
+	height: auto;
+}
+
+// Navbar burger
+.navbar-pfp {
+  margin: 0.2rem 0.2rem !important;
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid $light-pink;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-burger:hover .navbar-pfp {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
 // Mobile navbar
 
 @media screen and (max-width: 768px) {
@@ -95,24 +116,6 @@ body {
     text-align: center;
     width: 100%;
   }
-}
-
-.navbar-burger {
-  width: 73px !important;
-  height: 73px !important;
-}
-
-.navbar-burger span {
-  color: $light-pink;
-  width: 24px !important;
-  height: 2px !important;
-  left: calc(50% - 12px) !important;
-}
-
-.navbar-logo {
-	translate: 0.8rem 0.45rem;
-	width: 3.75rem;
-	height: auto;
 }
 
 /*
