@@ -13,6 +13,7 @@ $title-family: 'DM Sans', sans-serif;
 $subtitle-color: $light-pink;
 $subtitle-family: 'DM Sans', sans-serif;
 
+$navbar-height: 4rem;
 $navbar-background-color: $dark-purple;
 $navbar-item-color: $light-pink;
 $navbar-item-hover-color: $light-pink;
@@ -45,21 +46,39 @@ body {
   border-bottom: $darkest-purple solid 4px;
 	z-index: 2;
 	box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+.navbar-item {
+  padding: 0 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-item {
+    padding: 10px 15px !important;
+  }
+}
+
+.navbar-burger {
+  width: 73px !important;
+  height: 73px !important;
 }
 
 .navbar-burger span {
   color: $light-pink;
+  width: 24px !important;
+  height: 2px !important;
+  left: calc(50% - 12px) !important;
 }
 
 .navbar a {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .navbar-logo {
-	translate: 0.8rem 0.25rem;
-	width: 2.75rem;
-	height: 2.75rem;
+	translate: 0.8rem 0.45rem;
+	width: 3.75rem;
+	height: auto;
 }
 
 
