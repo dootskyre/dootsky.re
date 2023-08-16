@@ -10,6 +10,19 @@ body {
   height: 100vh;
 }
 
+.subtitle a {
+  color: #b7fefc;
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  color: #fcb7fe;
+}
+
+.subtitle a:active {
+  color: #f567ff;
+}
+
 .button {
   padding: 25px 15px 25px 15px !important;
   margin-top: 20px !important;
@@ -254,6 +267,13 @@ body {
 
 #description {
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: #2f1a91;
+}
+
+#description-home {
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #2f1a91;
@@ -337,11 +357,54 @@ body.lb-disable-scrolling {
   gap: 20px;
 }
 
-/*
+/* 
 
     contact.html
 
 */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#commission-prices {
+  background-color: #071059;
+  padding: 20px;
+  text-align: center;
+  border: 4px solid #fcb7fe;
+}
+
+#commission-prices table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #fcb7fe;
+  border: #fff solid 1px;
+}
+
+#commission-prices th,
+#commission-prices td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+#commission-prices th {
+  color: #f567ff;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  #commission-prices li {
+    font-size: 16px;
+  }
+}
+#contact {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #2f1a91;
+}
+
 /*
 
     tos.html

@@ -7,6 +7,7 @@ $dark-purple: #2f1a91;
 $purple: #9141cf;
 $pink: #f567ff;
 $light-pink: #fcb7fe;
+$light-blue: #b7fefc;
 
 $title-color: $light-pink;
 $title-family: 'DM Sans', sans-serif;
@@ -29,6 +30,19 @@ body {
     font-family: 'DM Sans', sans-serif;
     background-color: $dark-purple;
     height: 100vh;
+}
+
+.subtitle a {
+    color: $light-blue;
+    text-decoration: none;
+}
+
+.subtitle a:hover {
+    color: $light-pink;
+}
+
+.subtitle a:active {
+    color: $pink;
 }
 
 .button {
@@ -290,6 +304,13 @@ body {
 
 #description {
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: $dark-purple;
+}
+
+#description-home {
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $dark-purple;
@@ -374,11 +395,56 @@ body.lb-disable-scrolling {
   gap: 20px;
 }
 
-/*
+/* 
 
     contact.html
 
 */
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#commission-prices {
+  background-color: $darkest-purple;
+  padding: 20px;
+  text-align: center;
+  border: 4px solid $light-pink;
+}
+
+#commission-prices table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: $light-pink;
+  border: #fff solid 1px;
+}
+
+#commission-prices th,
+#commission-prices td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+#commission-prices th {
+  color: $pink;
+  text-align: center;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  #commission-prices li {
+    font-size: 16px;
+  }
+}
+
+#contact {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: $dark-purple;
+}
+
 
 /*
 
