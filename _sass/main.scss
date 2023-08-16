@@ -270,9 +270,6 @@ body.lb-disable-scrolling {
 #gallery {
   background-color: $darkest-purple;
   padding: 50px 0;
-}
-
-#gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -281,6 +278,7 @@ body.lb-disable-scrolling {
 
 #gallery .columns {
   width: 90vw;
+  height: auto;
 }
 
 #gallery .columns .column.is-4 {
@@ -302,12 +300,12 @@ body.lb-disable-scrolling {
   height: 100%;
   max-height: 360px;
   vertical-align: top;
+  object-fit: scale-down;
 }
 
 #gallery .columns a:hover {
   transform: scale(1.05);
 }
-
 
 #gallery .columns.is-multiline {
   display: flex;
