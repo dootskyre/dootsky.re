@@ -53,9 +53,15 @@ body {
 }
 
 .navbar-logo {
-  translate: 0.8rem 0.45rem;
-  width: 3.75rem;
+  width: 74px;
+  height: 74px;
+}
+
+.navbar-logo img {
+  width: 90%;
+  margin: 0.25rem 0.25rem !important;
   height: auto;
+  border: 2px solid #fcb7fe;
 }
 
 .navbar-pfp {
