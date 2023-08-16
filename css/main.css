@@ -15,6 +15,10 @@ body {
     index.html
 
 */
+#title {
+  padding: 20px;
+}
+
 /* 
     Navbar
 */
@@ -26,25 +30,16 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-.navbar-end {
-  display: flex !important;
-  align-items: center !important; /* Vertical center alignment */
-  justify-content: center !important; /* Horizontal center alignment */
-  flex-grow: 1; /* Expand to fill available space */
-  padding-right: 60px; /* Add some padding to the right for spacing */
+.navbar a {
+  font-size: 2rem;
 }
 
-.navbar-menu.is-active .navbar-end {
+.navbar-end {
   display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important; /* Center alignment */
-  justify-content: center !important; /* Center alignment */
-  width: 100%; /* Take up the entire width */
-  padding-right: 0 !important;
-}
-.navbar-menu.is-active .navbar-end .navbar-item {
-  text-align: center;
-  width: 100%;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-grow: 1;
+  padding-right: 60px;
 }
 
 .navbar-item {
@@ -52,11 +47,29 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.navbar-item.current {
+  color: #fcb7fe;
+  background-color: #9141cf;
+}
+
 @media screen and (max-width: 768px) {
   .navbar-item {
     padding: 10px 15px !important;
   }
 }
+.navbar-menu.is-active .navbar-end {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100%;
+  padding-right: 0 !important;
+}
+.navbar-menu.is-active .navbar-end .navbar-item {
+  text-align: center;
+  width: 100%;
+}
+
 .navbar-burger {
   width: 73px !important;
   height: 73px !important;
@@ -69,18 +82,10 @@ body {
   left: calc(50% - 12px) !important;
 }
 
-.navbar a {
-  font-size: 2rem;
-}
-
 .navbar-logo {
   translate: 0.8rem 0.45rem;
   width: 3.75rem;
   height: auto;
-}
-
-#title {
-  padding: 20px;
 }
 
 /*
