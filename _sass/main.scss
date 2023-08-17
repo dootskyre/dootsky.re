@@ -107,7 +107,6 @@ body {
   z-index: 2;
 }
 
-/* Center the navbar-center content */
 .navbar-center {
   position: absolute;
   z-index: 1;
@@ -153,7 +152,6 @@ body {
 
 /* Navbar burger */
 .navbar-brand {
-  //center
   position: relative;
   z-index: 1;
   display: flex;
@@ -177,21 +175,11 @@ body {
 
 /* Mobile and tablet navbar */
 @media screen and (max-width: 1023px) {
-  .navbar-item {
-		padding: 10px 15px !important;
-	}
-
 	.navbar-menu.is-active .navbar-end, .navbar-start {
 		.navbar-item {
 			text-align: center;
 			width: 100%;
 		}
-	}
-
-	.navbar-center {
-		margin-right: auto;
-		margin-left: auto;
-		width: 74px; /* Adjust width as needed */
 	}
 }
 
