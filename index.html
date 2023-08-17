@@ -1,121 +1,158 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sky's portfolio!</title>
+		<title>Sky's portfolio!</title>
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/slick-theme.css">
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/slick.css" />
+		<link rel="stylesheet" href="/css/slick-theme.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/lib/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="/lib/main.js"></script>
 
-    <!-- Favicons -->
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
+		<!-- Favicons -->
+		<link rel="manifest" href="/site.webmanifest" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/images/favicons/android-chrome-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="512x512"
+			href="/images/favicons/android-chrome-512x512.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicons/favicon-16x16.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicons/favicon-32x32.png"
+		/>
+		<link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico" />
 
-    <!-- SEO - Change accordingly when done/have your own domain -->
-    <meta name="description" content="Sky's portfolio!" />
-    <meta name="keywords" content="dootskyre, sky, art, pixel art, portfolio, commissions" />
-    <meta name="author" content="dootskyre" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- SEO - Change accordingly when done/have your own domain -->
+		<meta name="description" content="Sky's portfolio!" />
+		<meta
+			name="keywords"
+			content="dootskyre, sky, art, pixel art, portfolio, commissions"
+		/>
+		<meta name="author" content="dootskyre" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Open Graph Tags - Change accordingly when done/have your own domain -->
-    <meta content="Sky's portfolio" property="og:title" />
-    <meta content="Lorem ipsum dolor sit amet" property="og:description" />
-    <meta content="https://dootskyre.femboyfurry.net" property="og:url" />
-    <meta content="https://dootskyre.femboyfurry.net/images/pfp.png" property="og:image" />
-    <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
-</head>
-<body>
-    <nav class="navbar" role="navigation">
-        <div class="navbar-brand">
-            <div class="navbar-burger" data-target="navbarLinks">
-                <img class="navbar-pfp" src="/images/pfp.png" alt="Profile Picture">
+		<!-- Open Graph Tags - Change accordingly when done/have your own domain -->
+		<meta content="Sky's portfolio" property="og:title" />
+		<meta content="Lorem ipsum dolor sit amet" property="og:description" />
+		<meta content="https://dootskyre.femboyfurry.net" property="og:url" />
+		<meta
+			content="https://dootskyre.femboyfurry.net/images/pfp.png"
+			property="og:image"
+		/>
+		<meta content="#4069fd" data-react-helmet="true" name="theme-color" />
+	</head>
+	<body>
+		<nav class="navbar" role="navigation">
+            <div class="navbar-brand">
+                <div class="navbar-burger is-hidden-desktop" data-target="navbarLinks">
+					<img class="navbar-pfp" src="/images/pfp.png" alt="Profile Picture" />
+				</div>
             </div>
-            <a class="navbar-logo is-hidden-touch" href="/">
-                <img src="/images/pfp.png" style="border-radius: 50%;">
-            </a>
-        </div>
-        <div id="navbarLinks" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item current" href="/">
-                    Home
-                </a>
-                <a class="navbar-item" href="/gallery.html">
-                    Gallery
-                </a>
-                <a class="navbar-item" href="/contact.html">
-                    Contact
-                </a>
-                <a class="navbar-item" href="/tos.html">
-                    ToS
-                </a>
-            </div>
-        </div>
-    </nav>
+			<div id="navbarLinks" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item current is-hidden-desktop" href="/">Home</a>
+					<a class="navbar-item" href="/about.html">About</a>
+					<a class="navbar-item" href="/gallery.html">Gallery</a>
+				</div>
+				<div class="navbar-center">
+                    <a class="navbar-logo is-hidden-touch" href="/">
+                        <img src="/images/pfp.png" style="border-radius: 50%" />
+                    </a>
+                </div>
+				<div class="navbar-end">
+					<a class="navbar-item" href="/commissions.html">Commissions</a>
+					<a class="navbar-item" href="/tos.html">ToS</a>
+				</div>
+			</div>
+		</nav>
 
-    <section class="section" id="title">
-        <div class="container">
-            <p class="subtitle is-1 has-text-pink has-text-centered">
-                <b>Sky's portfolio</b>
-            </p>
-        </div>
-    </section>
+		<section class="section" id="title">
+			<div class="container">
+				<p class="subtitle is-1 has-text-pink has-text-centered">
+					<b>Sky's portfolio</b>
+				</p>
+			</div>
+		</section>
 
-    <section class="section" id="carousel">
-      <div class="container">
-        <button type="button" class="carousel-previous"><img src="/images/carousel/previous arrow.png"></button>
-        <div class="slider">
-            <div class="slide">
-                <img src="/images/art/5.png" alt="Commission for JovannMC" />
-                <p class="slide-text">Commission for JovannMC</p>
-            </div>
-            <div class="slide">
-                <img src="/images/art/6.jfif" alt="Enby Lizard Drawing" />
-                <p class="slide-text">Enby Lizard Drawing</p>
-            </div>
-            <div class="slide">
-                <img src="/images/art/7.png" alt="Fire Person Drawing" />
-                <p class="slide-text">Fire Person Drawing</p>
-            </div>
-            <div class="slide">
-                <img src="/images/art/8.png" alt="Silly Top Hat Guy" />
-                <p class="slide-text">Silly Top Hat Guy</p>
-            </div>
-            <div class="slide">
-                <img src="/images/art/12.png" alt="Pixel Art Mario Kart Drawing" />
-                <p class="slide-text">Pixel Art Mario Kart Drawing</p>
-            </div>
-        </div>
-        <button type="button" class="carousel-next"><img src="/images/carousel/next arrow.png"></button>
-      </div>
-    </section>
+		<section class="section" id="carousel">
+			<div class="container">
+				<button type="button" class="carousel-previous">
+					<img src="/images/carousel/previous arrow.png" />
+				</button>
+				<div class="slider">
+					<div class="slide">
+						<img src="/images/art/5.png" alt="Commission for JovannMC" />
+						<p class="slide-text">Commission for JovannMC</p>
+					</div>
+					<div class="slide">
+						<img src="/images/art/6.jfif" alt="Enby Lizard Drawing" />
+						<p class="slide-text">Enby Lizard Drawing</p>
+					</div>
+					<div class="slide">
+						<img src="/images/art/7.png" alt="Fire Person Drawing" />
+						<p class="slide-text">Fire Person Drawing</p>
+					</div>
+					<div class="slide">
+						<img src="/images/art/8.png" alt="Silly Top Hat Guy" />
+						<p class="slide-text">Silly Top Hat Guy</p>
+					</div>
+					<div class="slide">
+						<img src="/images/art/12.png" alt="Pixel Art Mario Kart Drawing" />
+						<p class="slide-text">Pixel Art Mario Kart Drawing</p>
+					</div>
+				</div>
+				<button type="button" class="carousel-next">
+					<img src="/images/carousel/next arrow.png" />
+				</button>
+			</div>
+		</section>
 
-    <section class="section" id="description-home">
-        <div class="container">
-            <p class="subtitle is-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </section>
+		<section class="section" id="description-home">
+			<div class="container">
+				<p class="subtitle is-4">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</section>
 
-    <section class="section" id="commission">
-        <p class="subtitle is-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p> 
-        <button class="button">
-            <a href="/contact.html">Commission</a>
-        </button>
-    </section>
-</body>
+		<section class="section" id="commission">
+			<p class="subtitle is-4">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<button class="button">
+				<a href="/contact.html">Commission</a>
+			</button>
+		</section>
+	</body>
 </html>

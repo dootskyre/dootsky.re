@@ -93,85 +93,93 @@ body {
 
 .navbar {
 	width: 100%;
-  border-bottom: $darkest-purple solid 4px;
+	border-bottom: $darkest-purple solid 4px;
 	z-index: 2;
 	box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+	font-family: "DM Sans", sans-serif;
 }
 
 .navbar a {
 	font-size: 2rem;
 }
 
-.navbar-end {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-grow: 1;
-  padding-right: 60px;
+/* Center the navbar-center content */
+.navbar-center {
+  position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .navbar-item {
-  padding: 0.8rem 1.5rem !important;
-  transition: background-color 0.3s ease;
+	padding: 0.8rem 1.5rem !important;
+	transition: background-color 0.3s ease;
 }
 
 .navbar-item:active {
-  background-color: $pink !important;
+	background-color: $pink !important;
 }
 
 .navbar-item.current {
-  color: $light-pink;
-  background-color: $purple;
+	color: $light-pink;
+	background-color: $purple;
 }
 
 .navbar-logo {
-  width: 74px;
-  height: 74px;
+	width: 74px;
+	height: 74px;
 }
 
 .navbar-logo img {
-  width: 90%;
-  margin: 0.25rem 0.25rem !important;
+	width: 90%;
+	margin: 0.25rem 0.25rem !important;
 	height: auto;
-  border: 2px solid $light-pink;
+	border: 2px solid $light-pink;
 }
 
-// Navbar burger
+/* Navbar burger */
 .navbar-pfp {
-  margin: 0.2rem 0.2rem !important;
-  width: 90%;
-  height: auto;
-  border-radius: 50%;
-  border: 2px solid $light-pink;
-  transition: border-color 0.3s ease;
+	margin: 0.2rem 0.2rem !important;
+	width: 90%;
+	height: auto;
+	border-radius: 50%;
+	border: 2px solid $light-pink;
+	transition: border-color 0.3s ease;
 }
 
 .navbar-burger:active .navbar-pfp {
-  border-color: rgba(255, 255, 255, 0.5);
+	border-color: rgba(255, 255, 255, 0.5);
 }
 
-
-// Mobile navbar
-
+/* Mobile navbar */
 @media screen and (max-width: 768px) {
-  .navbar-item {
-    padding: 10px 15px !important;
-  }
-}
+	.navbar-item {
+		padding: 10px 15px !important;
+	}
 
-.navbar-menu.is-active .navbar-end {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100%;
-  padding-right: 0 !important;
+	.navbar-menu.is-active .navbar-end {
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: 100%;
+		padding-right: 0 !important;
 
-  .navbar-item {
-    text-align: center;
-    width: 100%;
-  }
+		.navbar-item {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.navbar-center {
+		margin-right: auto;
+		margin-left: auto;
+		width: 74px; /* Adjust width as needed */
+	}
 }
 
 /*

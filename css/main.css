@@ -77,12 +77,16 @@ body {
   font-size: 2rem;
 }
 
-.navbar-end {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-grow: 1;
-  padding-right: 60px;
+/* Center the navbar-center content */
+.navbar-center {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .navbar-item {
@@ -111,6 +115,7 @@ body {
   border: 2px solid #fcb7fe;
 }
 
+/* Navbar burger */
 .navbar-pfp {
   margin: 0.2rem 0.2rem !important;
   width: 90%;
@@ -124,24 +129,29 @@ body {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Mobile navbar */
 @media screen and (max-width: 768px) {
   .navbar-item {
     padding: 10px 15px !important;
   }
+  .navbar-menu.is-active .navbar-end {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+    padding-right: 0 !important;
+  }
+  .navbar-menu.is-active .navbar-end .navbar-item {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-center {
+    margin-right: auto;
+    margin-left: auto;
+    width: 74px; /* Adjust width as needed */
+  }
 }
-.navbar-menu.is-active .navbar-end {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100%;
-  padding-right: 0 !important;
-}
-.navbar-menu.is-active .navbar-end .navbar-item {
-  text-align: center;
-  width: 100%;
-}
-
 /*
     Carousel
 */
