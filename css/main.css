@@ -74,7 +74,7 @@ body {
 .navbar {
   width: 100%;
   border-bottom: #071059 solid 4px;
-  z-index: 2;
+  z-index: 1000 !important;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
 }
