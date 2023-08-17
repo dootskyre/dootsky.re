@@ -140,8 +140,8 @@ body {
 }
 
 .navbar-logo {
-	width: 74px;
-	height: 74px;
+	width: 64px;
+	height: 64px;
 }
 
 .navbar-logo img {
@@ -152,8 +152,18 @@ body {
 }
 
 /* Navbar burger */
+.navbar-brand {
+  //center
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .navbar-pfp {
-	margin: 0.2rem 0.2rem !important;
+	margin: 0.25rem 0.25rem !important;
 	width: 90%;
 	height: auto;
 	border-radius: 50%;
@@ -167,7 +177,7 @@ body {
 
 /* Mobile navbar */
 @media screen and (max-width: 768px) {
-	.navbar-item {
+  .navbar-item {
 		padding: 10px 15px !important;
 	}
 
