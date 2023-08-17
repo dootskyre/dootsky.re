@@ -148,20 +148,12 @@ body {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Mobile navbar */
-@media screen and (max-width: 768px) {
+/* Mobile and tablet navbar */
+@media screen and (max-width: 1023px) {
   .navbar-item {
     padding: 10px 15px !important;
   }
-  .navbar-menu.is-active .navbar-end {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100%;
-    padding-right: 0 !important;
-  }
-  .navbar-menu.is-active .navbar-end .navbar-item {
+  .navbar-menu.is-active .navbar-end .navbar-item, .navbar-start .navbar-item {
     text-align: center;
     width: 100%;
   }
