@@ -167,10 +167,33 @@ body {
 	border-radius: 50%;
 	border: 2px solid $light-pink;
 	transition: border-color 0.3s ease;
+
+  @media screen and (max-width: 1023px) {
+    border: 2px solid $light-pink;
+  }
 }
 
 .navbar-burger:active .navbar-pfp {
 	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-pfp-container {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-pfp-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid $light-pink;
+  transform: rotate(-45deg);
+}
+
+.navbar-burger.is-active .navbar-pfp-arrow {
+  transform: rotate(-225deg);
 }
 
 /* Mobile and tablet navbar */

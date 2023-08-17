@@ -142,9 +142,33 @@ body {
   border: 2px solid #fcb7fe;
   transition: border-color 0.3s ease;
 }
+@media screen and (max-width: 1023px) {
+  .navbar-pfp {
+    border: 2px solid #fcb7fe;
+  }
+}
 
 .navbar-burger:active .navbar-pfp {
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-pfp-container {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-pfp-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fcb7fe;
+  transform: rotate(-45deg);
+}
+
+.navbar-burger.is-active .navbar-pfp-arrow {
+  transform: rotate(-225deg);
 }
 
 /* Mobile and tablet navbar */
