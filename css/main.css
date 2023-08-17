@@ -77,9 +77,14 @@ body {
   font-size: 2rem;
 }
 
+.navbar-start, .navbar-end {
+  z-index: 2;
+}
+
 /* Center the navbar-center content */
 .navbar-center {
   position: absolute;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,6 +106,11 @@ body {
 .navbar-item.current {
   color: #fcb7fe;
   background-color: #9141cf;
+}
+
+.navbar-logo.current {
+  background-color: #9141cf;
+  border-radius: 50%;
 }
 
 .navbar-logo {
