@@ -1,175 +1,172 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Sky's portfolio!</title>
+	<title>Sky's portfolio!</title>
 
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/slick.css">
-    <link rel="stylesheet" href="/css/slick-theme.css">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
+	<link rel="stylesheet" href="/css/main.css"/>
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="/css/slick-theme.css">
+	<link rel="stylesheet" href="/css/lightbox.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/lib/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="/lib/main.js"></script>
 
-    <!-- Favicons -->
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
+	<!-- Favicons -->
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
 
-    <!-- SEO - Change accordingly when done/have your own domain -->
-    <meta name="description" content="Sky's portfolio!" />
-    <meta name="keywords" content="dootskyre, sky, art, pixel art, portfolio, commissions" />
-    <meta name="author" content="dootskyre" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- SEO - Change accordingly when done/have your own domain -->
+	<meta name="description" content="Sky's portfolio!"/>
+	<meta name="keywords" content="dootskyre, sky, art, pixel art, portfolio, commissions"/>
+	<meta name="author" content="dootskyre"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- Open Graph Tags - Change accordingly when done/have your own domain -->
-    <meta content="Gallery of Sky's work!" property="og:title" />
-    <meta content="Lorem ipsum dolor sit amet" property="og:description" />
-    <meta content="https://dootskyre.femboyfurry.net" property="og:url" />
-    <meta content="https://dootskyre.femboyfurry.net/images/pfp.png" property="og:image" />
-    <meta content="#4069fd" data-react-helmet="true" name="theme-color" />
+	<!-- Open Graph Tags - Change accordingly when done/have your own domain -->
+	<meta content="Gallery of Sky's work!" property="og:title"/>
+	<meta content="Lorem ipsum dolor sit amet" property="og:description"/>
+	<meta content="https://dootskyre.femboyfurry.net" property="og:url"/>
+	<meta content="https://dootskyre.femboyfurry.net/images/pfp.png" property="og:image"/>
+	<meta content="#4069fd" data-react-helmet="true" name="theme-color"/>
 </head>
 <body>
-		<nav class="navbar is-fixed-top" role="navigation">
-      <div class="navbar-brand is-hidden-desktop">
-        <div class="navbar-burger" data-target="navbarLinks">
-					<img class="navbar-pfp" src="/images/pfp.png" alt="Profile picture. Also the burger menu" title="Burger menu"/>
-                    <div class="navbar-pfp-arrow"></div>
+	<nav class="navbar is-fixed-top" role="navigation">
+		<div class="navbar-brand is-hidden-desktop">
+			<div class="navbar-burger" data-target="navbarLinks">
+				<img class="navbar-pfp" src="/images/pfp.png" alt="Profile picture. Also the burger menu" title="Burger menu"/>
+				<div class="navbar-pfp-arrow"></div>
+			</div>
+		</div>
+		<div id="navbarLinks" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item is-hidden-desktop" href="/">Home</a>
+				<a class="navbar-item" href="/about.html">About</a>
+				<a class="navbar-item current" href="/gallery.html">Gallery</a>
+			</div>
+			<div class="navbar-center is-hidden-touch"">
+				<a class="navbar-logo" href="/">
+					<img src="/images/pfp.png" style="border-radius: 50%" title="Home"/>
+				</a>
+			</div>
+			<div class="navbar-end">
+				<a class="navbar-item" href="/commissions.html">Commissions</a>
+				<a class="navbar-item" href="/tos.html">ToS</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="section" id="title">
+		<div class="container">
+			<p class="subtitle is-1 has-text-pink has-text-centered">
+				<b>Gallery</b>
+			</p>
+		</div>
+	</section>
+
+	<section class="section" id="description">
+		<div class="container">
+			<p class="subtitle is-4">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+	</section>
+
+	<section class="section" id="gallery">
+		<div class="container">
+			<div class="columns is-multiline">
+				<div>
+					<a href="/images/art/1.jfif" data-lightbox="gallery" data-title="Commission of Koishi Komeiji">
+						<img src="/images/art/1.jfif" alt="Commission of Koishi Komeiji">
+					</a>
 				</div>
-            </div>
-			<div id="navbarLinks" class="navbar-menu">
-				<div class="navbar-start">
-					<a class="navbar-item is-hidden-desktop" href="/">Home</a>
-					<a class="navbar-item" href="/about.html">About</a>
-					<a class="navbar-item current" href="/gallery.html">Gallery</a>
+				<div>
+					<a href="/images/art/2.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (1)">
+						<img src="/images/art/2.png" alt="Commissions for Pretendo Network Patreon Icons (1)">
+					</a>
 				</div>
-        <div class="navbar-center is-hidden-touch"">
-          <a class="navbar-logo" href="/">
-            <img src="/images/pfp.png" style="border-radius: 50%" title="Home"/>
-          </a>
-        </div>
-				<div class="navbar-end">
-					<a class="navbar-item" href="/commissions.html">Commissions</a>
-					<a class="navbar-item" href="/tos.html">ToS</a>
+				<div>
+					<a href="/images/art/3.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (2)">
+						<img src="/images/art/3.png" alt="Commissions for Pretendo Network Patreon Icons (2)">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/4.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (3)">
+						<img src="/images/art/4.png" alt="Commissions for Pretendo Network Patreon Icons (3)">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/5.png" data-lightbox="gallery" data-title="Commission for JovannMC">
+						<img src="/images/art/5.png" alt="Commission for JovannMC">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/6.jfif" data-lightbox="gallery" data-title="Enby Lizard Drawing">
+						<img src="/images/art/6.jfif" alt="Enby Lizard Drawing">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/7.png" data-lightbox="gallery" data-title="Fire Person Drawing">
+						<img src="/images/art/7.png" alt="Fire Person Drawing">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/8.png" data-lightbox="gallery" data-title="Silly Top Hat Guy">
+						<img src="/images/art/8.png" alt="Silly Top Hat Guy">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/9.jpeg" data-lightbox="gallery" data-title="Sketch PFP for Emily">
+						<img src="/images/art/9.jpeg" alt="Sketch PFP for Emily">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/10.png" data-lightbox="gallery" data-title="Mario Multiverse Server Icon (unofficial)">
+						<img src="/images/art/10.png" alt="Mario Multiverse Server Icon (unofficial)">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/11.png" data-lightbox="gallery" data-title="Fafurr Commission">
+						<img src="/images/art/11.png" alt="Fafurr Commission">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/12.png" data-lightbox="gallery" data-title="Pixel Art Mario Kart Drawing">
+						<img src="/images/art/12.png" alt="Pixel Art Mario Kart Drawing">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/13.png" data-lightbox="gallery" data-title="Kirby and the Forgotten Land Fan Art">
+						<img src="/images/art/13.png" alt="Kirby and the Forgotten Land Fan Art">
+					</a>
+				</div>
+				<div>
+					<a href="/images/art/14.png" data-lightbox="gallery" data-title="Quagsire with Enby Flag">
+						<img src="/images/art/14.png" alt="Quagsire with Enby Flag">
+					</a>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</section>
 
-    <section class="section" id="title">
-        <div class="container">
-            <p class="subtitle is-1 has-text-pink has-text-centered">
-                <b>Gallery</b>
-            </p>
-        </div>
-    </section>
-
-    <section class="section" id="description">
-        <div class="container">
-            <p class="subtitle is-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-    </section>
-
-    <section class="section" id="gallery">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div>
-              <a href="/images/art/1.jfif" data-lightbox="gallery" data-title="Commission of Koishi Komeiji">
-                <img src="/images/art/1.jfif" alt="Commission of Koishi Komeiji">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/2.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (1)">
-                <img src="/images/art/2.png" alt="Commissions for Pretendo Network Patreon Icons (1)">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/3.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (2)">
-                <img src="/images/art/3.png" alt="Commissions for Pretendo Network Patreon Icons (2)">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/4.png" data-lightbox="gallery" data-title="Commissions for Pretendo Network Patreon Icons (3)">
-                <img src="/images/art/4.png" alt="Commissions for Pretendo Network Patreon Icons (3)">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/5.png" data-lightbox="gallery" data-title="Commission for JovannMC">
-                <img src="/images/art/5.png" alt="Commission for JovannMC">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/6.jfif" data-lightbox="gallery" data-title="Enby Lizard Drawing">
-                <img src="/images/art/6.jfif" alt="Enby Lizard Drawing">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/7.png" data-lightbox="gallery" data-title="Fire Person Drawing">
-                <img src="/images/art/7.png" alt="Fire Person Drawing">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/8.png" data-lightbox="gallery" data-title="Silly Top Hat Guy">
-                <img src="/images/art/8.png" alt="Silly Top Hat Guy">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/9.jpeg" data-lightbox="gallery" data-title="Sketch PFP for Emily">
-                <img src="/images/art/9.jpeg" alt="Sketch PFP for Emily">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/10.png" data-lightbox="gallery" data-title="Mario Multiverse Server Icon (unofficial)">
-                <img src="/images/art/10.png" alt="Mario Multiverse Server Icon (unofficial)">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/11.png" data-lightbox="gallery" data-title="Fafurr Commission">
-                <img src="/images/art/11.png" alt="Fafurr Commission">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/12.png" data-lightbox="gallery" data-title="Pixel Art Mario Kart Drawing">
-                <img src="/images/art/12.png" alt="Pixel Art Mario Kart Drawing">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/13.png" data-lightbox="gallery" data-title="Kirby and the Forgotten Land Fan Art">
-                <img src="/images/art/13.png" alt="Kirby and the Forgotten Land Fan Art">
-              </a>
-            </div>
-            <div>
-              <a href="/images/art/14.png" data-lightbox="gallery" data-title="Quagsire with Enby Flag">
-                <img src="/images/art/14.png" alt="Quagsire with Enby Flag">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    
-    
-
-    <script>
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true,
-            'alwaysShowNavOnTouchDevices': true,
-            'imageFadeDuration': 300,
-            'fadeDuration': 300,
-            'showImageNumberLabel': false,
-            'fitImagesInViewport': true,
-        });
-    </script>
+	<script>
+		lightbox.option({
+			'resizeDuration': 200,
+			'wrapAround': true,
+			'alwaysShowNavOnTouchDevices': true,
+			'imageFadeDuration': 300,
+			'fadeDuration': 300,
+			'showImageNumberLabel': false,
+			'fitImagesInViewport': true,
+		});
+	</script>
 </body>
 </html>
