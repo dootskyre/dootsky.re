@@ -77,19 +77,20 @@ body {
   }
 }
 
-/*
+#top {
+  background-color: $dark-purple;
+  width: 100%;
+  height: 74px;
+}
 
-    index.html
-
-*/
+@media screen and (max-width: 1023px) {
+  #top {
+    height: 64px;
+  }
+}
 
 #title {
   padding: 20px;
-  margin-top: 74px;
-
-  @media screen and (max-width: 1023px) {
-    margin-top: 64px;
-  }
 }
 
 /* 
@@ -210,6 +211,12 @@ body {
 		}
 	}
 }
+
+/*
+
+    index.html
+
+*/
 
 /*
     Carousel
