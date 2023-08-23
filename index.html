@@ -73,8 +73,8 @@
 
 	<section class="section" id="carousel">
 		<div class="container">
-			<button type="button" class="carousel-previous">
-				<img src="/images/carousel/previous arrow.png"/>
+			<button type="button" class="carousel-previous" aria-label="Previous image">
+				<img src="/images/carousel/previous arrow.png" alt="Previous image arrow"/>
 			</button>
 			<div class="slider">
 				<div class="slide">
@@ -98,8 +98,8 @@
 					<p class="slide-text">Pixel Art Mario Kart Drawing</p>
 				</div>
 			</div>
-			<button type="button" class="carousel-next">
-				<img src="/images/carousel/next arrow.png"/>
+			<button type="button" class="carousel-next" aria-label="Next image">
+				<img src="/images/carousel/next arrow.png" alt="Next image arrow"/>
 			</button>
 		</div>
 	</section>
@@ -118,6 +118,22 @@
 				centerMode: true,
 				prevArrow: $(".carousel-previous"),
 				nextArrow: $(".carousel-next"),
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					},
+					{ 
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1,
+						}
+					}
+				]
 			});
 		});
 	</script>
